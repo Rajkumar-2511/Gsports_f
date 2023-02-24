@@ -5099,7 +5099,7 @@ video.bg-video {
 
 @media (pointer: coarse) and (hover: none) {
   body {
-    background: url("../assets/img/ev_bg.png") #2a5555 no-repeat center center scroll;
+    background: url("../assets/img/ev_bg.png") #2a5555  center center scroll;
     background-size: cover;
   }
 
@@ -5207,4 +5207,15 @@ video.bg-video {
     right: 2.5rem;
     width: auto;
   }
+}
+
+@media (max-width: 992px) {
+  .masthead::before{
+    opacity: 0.3;
+  }
+}
+
+.button:hover{
+  transform: scale(1.1);
+  animation: smooth;
 }
